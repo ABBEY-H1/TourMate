@@ -1,0 +1,32 @@
+.review-page {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .guide-review {
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+  
+  .guide-review p:last-child {
+    font-style: italic;
+  }
+  
