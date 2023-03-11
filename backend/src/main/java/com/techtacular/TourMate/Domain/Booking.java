@@ -22,7 +22,7 @@ public class Booking {
 
   @ManyToOne
   @JoinColumn(name = "guide_id")
-  private TourGuide guide;
+  private TourGuide tourGuideId;
 
   @ManyToOne
   @JoinColumn(name = "tourist_id")
@@ -37,11 +37,11 @@ public class Booking {
   }
 
   public TourGuide getGuide() {
-    return guide;
+    return tourGuideId;
   }
 
   public void setGuide(TourGuide guide) {
-    this.guide = guide;
+    this.tourGuideId = guide;
   }
 
   public Tourist getTourist() {
