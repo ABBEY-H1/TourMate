@@ -16,24 +16,43 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.techtacular.TourMate.Domain.Booking;
+import com.techtacular.TourMate.Domain.Tourist;
 import com.techtacular.TourMate.Repository.BookingRepository;
+import com.techtacular.TourMate.Repository.TouristRepository;
 
 @RestController
 @RequestMapping("/bookings")
 public class BookingController {
 
+    public BookingController() {
+        // This constructor does not need to do anything
+      }
+
+
   @Autowired
   private BookingRepository bookingRepository;
 
-  public BookingController(BookingRepository bookingRepository) {
+  @Autowired
+  private TouristRepository touristRepository;
+
+  public BookingController(TouristRepository touristRepository) {
+    this.touristRepository = touristRepository;
+}
+
+public BookingController(BookingRepository bookingRepository) {
     this.bookingRepository = bookingRepository;
 }
 
-@PostMapping
-  public ResponseEntity<?> createBooking(@RequestBody Booking booking) {
-    Booking savedBooking = bookingRepository.save(booking);
-    return ResponseEntity.created(URI.create("/bookings/" + savedBooking.getId())).build();
-  }
+@PostMapping("/createBooking")
+public ResponseEntity<?> createBooking(@RequestBody Booking booking) {
+  // Save the tourist object first
+  Tourist savedTourist = touristRepository.save(booking.getTourist());
+  // Set the tourist ID on the booking object
+  booking.getTourist().setId(savedTourist.getId());
+  // Save the booking object
+  Booking savedBooking = bookingRepository.save(booking);
+  return ResponseEntity.created(URI.create("/bookings/" + savedBooking.getId())).build();
+}
 
   @GetMapping("/{id}")
   public ResponseEntity<Booking> getBooking(@PathVariable Long id) {

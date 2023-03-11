@@ -15,7 +15,11 @@ public class BookingService {
   @Autowired
   private BookingRepository bookingRepository;
 
-  public Booking createBooking(Booking booking) {
+  public BookingService(BookingRepository bookingRepository) {
+    this.bookingRepository = bookingRepository;
+}
+
+public Booking createBooking(Booking booking) {
     return bookingRepository.save(booking);
   }
 
