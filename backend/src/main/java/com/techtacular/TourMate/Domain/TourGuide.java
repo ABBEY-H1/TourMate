@@ -21,6 +21,14 @@ public class TourGuide {
   @Column(name = "language")
   private String language;
 
+  @Column(name = "location")
+  private String location;
+
+  public String getLocation() {
+    return location;
+  }
+
+
   @Column(name = "expertise")
   private String expertise;
 
@@ -87,6 +95,10 @@ public class TourGuide {
 
   public void setAvailability(Boolean availability) {
     this.availability = availability;
+  }
+
+  public void setLocation(String location) {
+    this.location = location;
   }
 
 
