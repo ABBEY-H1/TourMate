@@ -28,6 +28,16 @@ public class Booking {
   @JoinColumn(name = "tourist_id")
   private Tourist tourist;
 
+  @Column(name = "date")
+  private LocalDate date;
+
+  @Column(name = "time")
+  private LocalTime time;
+
+  @Column(name = "duration")
+  private int duration;
+
+  
   public Long getId() {
     return id;
   }
@@ -76,14 +86,6 @@ public class Booking {
     this.duration = duration;
   }
 
-  @Column(name = "date")
-  private LocalDate date;
-
-  @Column(name = "time")
-  private LocalTime time;
-
-  @Column(name = "duration")
-  private int duration;
 
 
 }
