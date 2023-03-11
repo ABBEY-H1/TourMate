@@ -1,0 +1,28 @@
+<h2>Bookings</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Tourist Name</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Duration</th>
+      <th>Guide Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let booking of bookings">
+      <td>{{ booking.id }}</td>
+      <td>{{ booking.tourist.name }}</td>
+      <td>{{ booking.date }}</td>
+      <td>{{ booking.time.hour }}:{{ booking.time.minute }}</td>
+      <td>{{ booking.duration }}</td>
+      <td>{{ booking.guide.name }}</td>
+      <td>
+        <!-- <button (click)="editBooking(booking.id)">Edit</button>
+        <button (click)="deleteBooking(booking.id)">Delete</button> -->
+      </td>
+    </tr>
+  </tbody>
+</table>

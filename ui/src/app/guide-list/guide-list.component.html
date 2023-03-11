@@ -1,0 +1,17 @@
+<div class="guide-list">
+    <h2>Available Guides</h2>
+    <ul>
+      <li *ngFor="let guide of guides">
+        <a [routerLink]="['/guide', guide.id]">
+          <div class="guide-info">
+            <h3>{{ guide.name }}</h3>
+            <p>{{ guide.language }}</p>
+            <p>{{ guide.specialization }}</p>
+            <p>{{ guide.rating }}</p>
+          </div>
+          <img src="{{ guide.profilePicture }}" alt="{{ guide.name }}">
+        </a>
+      </li>
+    </ul>
+  </div>
+  
