@@ -1,9 +1,9 @@
-TourMate - Tour Guide Finder
+# TourMate - Tour Guide Finder
 
-Backend
+## Backend
 Java Version: Java 11 (LTS)
 
-To run the project:
+## Getting Started
 
 Clone the repository
 Install Java 11
