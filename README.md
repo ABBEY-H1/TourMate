@@ -29,3 +29,7 @@ cd ui <br>
 npm start <br>
 This will start a localhost server on port 4200. <br>
 By following these steps, you will be able to run the TourMate application on your local machine. <br>
+
+
+## Certificate 
+![NIT Warangal win](https://user-images.githubusercontent.com/98268656/232312612-0189079c-0adf-4583-833d-028488f6e03a.jpg)
