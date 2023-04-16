@@ -6,26 +6,26 @@ Java Version: Java 11 (LTS)
 ## Getting Started
 
 Clone the repository
-Install Java 11
-Open terminal (preferably CMD) and run the following commands:
-cd backend
-gradlew bootrun
-This will start a localhost server on port 8080.
-H2DB Console:
+Install Java 11 <br>
+Open terminal (preferably CMD) and run the following commands: <br>
+cd backend <br>
+gradlew bootrun <br>
+This will start a localhost server on port 8080. <br>
+H2DB Console: <br>
 
-Navigate to localhost:8080/database
-JDBC URL: jdbc:h2:file:./build/h2db/db/TourMate
-User ID: sa1
-Password: password1
-Swagger URL: http://localhost:8080/swagger-ui/index.html#/
+Navigate to localhost:8080/database <br>
+JDBC URL: jdbc:h2:file:./build/h2db/db/TourMate <br>
+User ID: sa1 <br>
+Password: password1 <br>
+Swagger URL: http://localhost:8080/swagger-ui/index.html#/ <br>
 
-Frontend
-Used Angular CLI
-To run the project:
-Install NodeJS from https://nodejs.org/en/download/
-Open terminal (preferably CMD) and run the following commands:
-npm install -g @angular/cli
-cd ui
-npm start
-This will start a localhost server on port 4200.
-By following these steps, you will be able to run the TourMate application on your local machine.
+Frontend <br>
+Used Angular CLI <br>
+To run the project: <br>
+Install NodeJS from https://nodejs.org/en/download/ <br>
+Open terminal (preferably CMD) and run the following commands: <br>
+npm install -g @angular/cli <br>
+cd ui <br>
+npm start <br>
+This will start a localhost server on port 4200. <br>
+By following these steps, you will be able to run the TourMate application on your local machine. <br>
