@@ -32,4 +32,4 @@ By following these steps, you will be able to run the TourMate application on yo
 
 
 ## Certificate 
-[Certificate.pdf](https://github.com/ABBEY-H1/TourMate/files/12344930/Certificate.pdf)
+![Certificate1024_1](https://github.com/ABBEY-H1/TourMate/assets/98225132/db1a5970-148e-40a6-ae5b-218ef4abe12e)
