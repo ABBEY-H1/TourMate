@@ -32,4 +32,4 @@ By following these steps, you will be able to run the TourMate application on yo
 
 
 ## Certificate 
-![NIT Warangal win](https://user-images.githubusercontent.com/98268656/232312612-0189079c-0adf-4583-833d-028488f6e03a.jpg)
+[Certificate.pdf](https://github.com/ABBEY-H1/TourMate/files/12344930/Certificate.pdf)
